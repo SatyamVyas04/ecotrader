@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { useCountdownTimer } from "./timer";
 
-const SALE_END_DATE = "2023-11-30T00:00:00";
+const SALE_END_DATE = "2024-11-30T00:00:00";
 
 const PrivateSaleLanding = () => {
 	const [email, setEmail] = useState("");
