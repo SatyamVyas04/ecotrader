@@ -126,7 +126,7 @@ const PrivateSaleLanding = () => {
 						{/* Waiting List Form */}
 						<div className="mt-8">
 							<div
-								className={`text-center justify-center sm:justify-start flex flex-wrap gap-x-2 w-dvw sm:w-full ${
+								className={`text-center justify-center sm:justify-start flex flex-wrap gap-x-2 w-full ${
 									isTimerExpired
 										? "text-3xl -mt-8 mb-4 sm:text-8xl tracking-tighter"
 										: "text-lg mb-4 mt-12 sm:mt-6"
