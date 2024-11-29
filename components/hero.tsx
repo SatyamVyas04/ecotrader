@@ -3,8 +3,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { useCountdownTimer } from "./timer";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
-const SALE_END_DATE = "2024-11-30T00:00:00";
+const SALE_END_DATE = "2023-11-30T00:00:00";
 
 const PrivateSaleLanding = () => {
 	const [email, setEmail] = useState("");
@@ -132,16 +134,16 @@ const PrivateSaleLanding = () => {
 							>
 								<h3>
 									{isTimerExpired
-										? "JOIN THE"
+										? "PRESALE"
 										: "PRIVATE SALE LAUNCHING SOON!"}{" "}
 								</h3>
-								<span className="text-red-500">
+								<span className="text-red-500 text-2xl sm:text-7xl">
 									{isTimerExpired
-										? "PRESALE"
+										? "IS NOW LIVE"
 										: "JOIN THE WAITING LIST"}{" "}
 								</span>
 							</div>
-							<form
+							{/* <form
 								onSubmit={handleSubmit}
 								className="flex flex-col sm:flex-row gap-4"
 							>
@@ -167,7 +169,29 @@ const PrivateSaleLanding = () => {
 								<div className="mt-4 text-center animate-bounce text-primary">
 									{emailError}
 								</div>
-							)}
+							)} */}
+							<Link
+								href="https://ect.ecotrader.io/"
+								target="_blank"
+							>
+								<div className="group relative px-8 py-3 bg-primary text-background rounded-lg overflow-hidden transform hover:scale-105 transition-all ease-in-out shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer">
+									<span className="relative z-10 font-bold tracking-wider">
+										ECT NOW
+									</span>
+
+									{/* Shimmer effect */}
+									<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/75 to-transparent -translate-x-full animate-shimmer group-hover:animate-none transition-all z-10"></div>
+
+									{/* Dynamic background effect
+									<div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div> */}
+
+									{/* External link icon */}
+									<ArrowUpRight
+										className="ml-2 opacity-0 group-hover:opacity-100 absolute right-4 top-1/2 -translate-y-1/2 text-black transition-all"
+										size={20}
+									/>
+								</div>
+							</Link>
 						</div>
 					</div>
 
