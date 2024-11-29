@@ -137,7 +137,7 @@ const PrivateSaleLanding = () => {
 										? "PRESALE"
 										: "PRIVATE SALE LAUNCHING SOON!"}{" "}
 								</h3>
-								<span className="text-red-500 text-2xl sm:text-7xl">
+								<span className="text-red-500 text-3xl sm:text-7xl">
 									{isTimerExpired
 										? "IS NOW LIVE"
 										: "JOIN THE WAITING LIST"}{" "}
