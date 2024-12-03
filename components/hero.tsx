@@ -169,7 +169,7 @@ const PrivateSaleLanding = () => {
 								<div className="mt-4 text-center animate-bounce text-primary">
 									{emailError}
 								</div>
-							)} */}
+							)}
 							<Link
 								href="https://ect.ecotrader.io/"
 								target="_blank"
@@ -179,13 +179,8 @@ const PrivateSaleLanding = () => {
 										ECT NOW
 									</span>
 
-									{/* Shimmer effect */}
 									<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/75 to-transparent -translate-x-full animate-shimmer group-hover:animate-none transition-all z-10"></div>
 
-									{/* Dynamic background effect
-									<div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div> */}
-
-									{/* External link icon */}
 									<ArrowUpRight
 										className="ml-2 opacity-0 group-hover:opacity-100 absolute right-4 top-1/2 -translate-y-1/2 text-black transition-all"
 										size={20}
@@ -193,7 +188,7 @@ const PrivateSaleLanding = () => {
 								</div>
 							</Link>
 						</div>
-					</div>
+					</div>*/}
 
 					{/* Rest of the existing component remains the same */}
 					<div className="space-y-5 w-full mb-8 lg:mb-0">
