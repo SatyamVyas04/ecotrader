@@ -2,8 +2,6 @@
 import Image from "next/image";
 import HyperText from "./ui/hyper-text";
 
-const isTimerExpired = true;
-
 const PrivateSaleLanding = () => {
   return (
     <div className="text-white p-4 md:p-6">
