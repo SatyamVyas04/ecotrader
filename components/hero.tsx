@@ -20,7 +20,7 @@ const PrivateSaleLanding = () => {
         </div>
 
         {/* Main Content */}
-        <div className={`flex flex-col-reverse lg:grid gap-4`}>
+        <div className={`flex flex-col lg:grid gap-4`}>
           {/* Rest of the existing component remains the same */}
           <div className="space-y-5 w-full mb-8 lg:mb-0">
             <h1 className="text-xl mt-8 sm:mt-6 sm:text-5xl font-bold tracking-tighter text-center items-center">
