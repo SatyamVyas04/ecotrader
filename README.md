@@ -1,4 +1,3 @@
-
 ![Screen Shot 2025-01-29 at 21 19 49](https://github.com/user-attachments/assets/477e077f-c6a8-40e2-9d1e-b33d48d079b1)
 
 **EcoTrader** is a platform that empowers small investors to participate in the renewable energy market, allowing investments in solar, wind, hydrogen, and waste-to-energy projects. The platform aims to provide users with opportunities to earn passive income while contributing to climate change mitigation. [Visit EcoTrader](https://www.ecotrader.io/)
@@ -87,6 +86,5 @@ Contributions are welcome! Please follow these steps:
 2. Create a new branch (`feature-branch`).
 3. Commit your changes.
 4. Push to your fork and submit a pull request.
-
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.

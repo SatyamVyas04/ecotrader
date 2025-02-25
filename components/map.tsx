@@ -5,29 +5,29 @@ import Image from "next/image";
 const EnergyMapSection = () => {
   return (
     <div className="relative">
-      <div className="max-w-7xl mx-auto p-4 md:p-8 grid grid-cols-1 md:grid-cols-[1.5fr,1fr] gap-6 bg-transparent">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 bg-transparent p-4 md:grid-cols-[1.5fr,1fr] md:p-8">
         {/* Map Container */}
-        <div className="rounded-3xl overflow-hidden border border-white/10 bg-background/40 hover:border-primary/50 transition-all">
+        <div className="overflow-hidden rounded-3xl border border-white/10 bg-background/40 transition-all hover:border-primary/50">
           <Image
             src="/map.png"
             alt="Energy Map"
             height={1000}
             width={1000}
-            className="w-full h-full object-cover"
+            className="h-full w-full object-cover"
           />
         </div>
 
         {/* Cards Container */}
-        <div className="space-y-4 grid">
+        <div className="grid space-y-4">
           {/* Solar Fields Card */}
-          <div className="rounded-3xl border border-white/10 bg-background/40 p-6 group hover:bg-primary hover:border-primary transition-all duration-300 hover:scale-105">
+          <div className="group rounded-3xl border border-white/10 bg-background/40 p-6 transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary">
             <div className="flex items-start gap-6">
-              <Sun className="w-24 my-auto text-primary group-hover:text-background shrink-0 h-full transition-colors" />
+              <Sun className="my-auto h-full w-24 shrink-0 text-primary transition-colors group-hover:text-background" />
               <div className="space-y-4">
-                <h2 className="text-white text-2xl font-bold group-hover:text-primary-foreground transition-colors">
+                <h2 className="text-2xl font-bold text-white transition-colors group-hover:text-primary-foreground">
                   SOLAR FIELDS
                 </h2>
-                <ul className="space-y-2 text-gray-300 group-hover:text-primary-foreground/90 transition-colors">
+                <ul className="space-y-2 text-gray-300 transition-colors group-hover:text-primary-foreground/90">
                   <li>Greece (25MW)</li>
                   <li>Crete (50MW)</li>
                   <li>Macedonia (15MW)</li>
@@ -39,14 +39,14 @@ const EnergyMapSection = () => {
           </div>
 
           {/* Wind Turbines Card */}
-          <div className="rounded-3xl border border-white/10 bg-background/40 p-6 group hover:bg-primary hover:border-primary transition-all duration-300 hover:scale-105">
+          <div className="group rounded-3xl border border-white/10 bg-background/40 p-6 transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary">
             <div className="flex items-start gap-6">
-              <Wind className="w-24 my-auto text-primary group-hover:text-background shrink-0 h-full transition-colors" />
+              <Wind className="my-auto h-full w-24 shrink-0 text-primary transition-colors group-hover:text-background" />
               <div className="space-y-4">
-                <h2 className="text-white text-2xl font-bold group-hover:text-primary-foreground transition-colors">
+                <h2 className="text-2xl font-bold text-white transition-colors group-hover:text-primary-foreground">
                   WIND TURBINES
                 </h2>
-                <p className="text-gray-300 group-hover:text-primary-foreground/90 transition-colors">
+                <p className="text-gray-300 transition-colors group-hover:text-primary-foreground/90">
                   Romania (150MW)
                 </p>
               </div>
@@ -54,14 +54,14 @@ const EnergyMapSection = () => {
           </div>
 
           {/* Energy Storage Card */}
-          <div className="rounded-3xl border border-white/10 bg-background/40 p-6 group hover:bg-primary hover:border-primary transition-all duration-300 hover:scale-105">
+          <div className="group rounded-3xl border border-white/10 bg-background/40 p-6 transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary">
             <div className="flex items-start gap-6">
-              <Battery className="w-24 my-auto text-primary group-hover:text-background shrink-0 h-full transition-colors" />
+              <Battery className="my-auto h-full w-24 shrink-0 text-primary transition-colors group-hover:text-background" />
               <div className="space-y-4">
-                <h2 className="text-white text-2xl font-bold group-hover:text-primary-foreground transition-colors">
+                <h2 className="text-2xl font-bold text-white transition-colors group-hover:text-primary-foreground">
                   ENERGY STORAGE
                 </h2>
-                <p className="text-gray-300 group-hover:text-primary-foreground/90 transition-colors">
+                <p className="text-gray-300 transition-colors group-hover:text-primary-foreground/90">
                   Romania (50MW)
                 </p>
               </div>
@@ -74,7 +74,7 @@ const EnergyMapSection = () => {
         alt="Pattern"
         width={0}
         height={0}
-        className="absolute top-1/2 -translate-y-1/2 right-0 h-auto w-dvw -z-10"
+        className="absolute right-0 top-1/2 -z-10 h-auto w-dvw -translate-y-1/2"
       />
     </div>
   );
