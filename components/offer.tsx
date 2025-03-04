@@ -44,7 +44,7 @@ const WhatWeOfferSection = () => {
                 {offering.number}.
               </span>
               <div className="space-y-2 md:space-y-4">
-                <h2 className="text-xl font-bold text-white transition-all group-hover:text-background md:text-2xl">
+                <h2 className="font-polysans text-xl font-bold text-white transition-all group-hover:text-background md:text-3xl">
                   {offering.title}
                 </h2>
                 <p className="text-sm leading-relaxed text-gray-300 transition-all group-hover:text-background">

@@ -37,7 +37,7 @@ export default function Footer() {
       {/* Top Section: Logo */}
       <div className="mb-4 mt-4 flex flex-col items-center">
         <Image
-          src="/light-logo-removebg-preview.png" // Replace with your logo path
+          src="/branding/light-logo.svg" // Replace with your logo path
           alt="Ecotrader Logo"
           width={1000}
           height={1000}

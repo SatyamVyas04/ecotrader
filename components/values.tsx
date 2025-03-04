@@ -5,25 +5,25 @@ const ValuesSection = () => {
   const values = [
     {
       icon: "🌍",
-      title: "SUSTAINABILITY",
+      title: "Sustainability",
       description:
         "We are committed to fostering a greener planet by actively advancing clean energy solutions and promoting practices that ensure environmental longevity.",
     },
     {
       icon: "💡",
-      title: "INNOVATION",
+      title: "Innovation",
       description:
         "Driving the future with cutting-edge technology, we enhance efficiency and optimize renewable energy systems for sustainable progress.",
     },
     {
       icon: "🤝",
-      title: "COLLABORATION",
+      title: "Collaboration",
       description:
         "Partnering with stakeholders and communities, we align efforts to create impactful, scalable solutions in renewable energy projects.",
     },
     {
       icon: "⚖️",
-      title: "INTEGRITY",
+      title: "Integrity",
       description:
         "Transparency and accountability define our actions, ensuring trust and ethical standards in every step of our journey toward a sustainable future.",
     },
@@ -46,7 +46,7 @@ const ValuesSection = () => {
             <div className="absolute h-[200px] w-[300px] -rotate-12">
               <div className="absolute inset-0 rounded-3xl border-2 border-blue-400/30" />
               <Image
-                src="/windmills.png"
+                src="/assets/windmills.png"
                 alt="Renewable Energy"
                 fill
                 className="rounded-3xl object-cover"
@@ -59,10 +59,12 @@ const ValuesSection = () => {
             {values.map((value, index) => (
               <div key={index} className="group relative">
                 <div
-                  className={`rounded-2xl border border-zinc-800 bg-background p-8 text-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground`}
+                  className={`h-full rounded-2xl border border-zinc-700 p-10 text-center backdrop-blur-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground`}
                 >
                   <div className="mb-6 text-4xl">{value.icon}</div>
-                  <h3 className="mb-4 text-4xl font-bold">{value.title}</h3>
+                  <h3 className="font-polysans mb-4 text-5xl font-bold tracking-wide">
+                    {value.title}
+                  </h3>
                   <p className="text-sm opacity-60">{value.description}</p>
                 </div>
               </div>
@@ -73,7 +75,7 @@ const ValuesSection = () => {
 
       {/* Background Pattern - Right Side */}
       <Image
-        src="/section-3.svg"
+        src="/assets/section-3.svg"
         alt="Pattern"
         width={0}
         height={0}

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const SpaceGrotesk = Space_Grotesk({
-  weight: ["300", "400", "500", "600", "700"],
+const inter = Inter({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "/ECOnew.png",
+      url: "/branding/symbol.svg",
     },
   ],
   metadataBase: new URL("https://www.ecotrader.io"), // Replace with actual domain
@@ -25,6 +25,21 @@ export const metadata: Metadata = {
       "Join the green energy revolution. Invest in sustainable projects and earn passive income while making a positive impact on the planet.",
     type: "website",
     url: "/",
+    images: [
+      {
+        url: "/seo/EcotraderTwitterBanner.png",
+        width: 1200,
+        height: 630,
+        alt: "Ecotrader",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecotrader: Revolutionizing Renewable Energy Investments",
+    description:
+      "Join the green energy revolution. Invest in sustainable projects and earn passive income while making a positive impact on the planet.",
+    images: ["/seo/EcotraderTwitterBanner.png"],
   },
 };
 
@@ -35,9 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${SpaceGrotesk.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

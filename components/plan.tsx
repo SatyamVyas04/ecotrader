@@ -5,42 +5,42 @@ const EnergyPlanSection = () => {
   const plans = [
     {
       icon: "☀️",
-      title: "SOLAR FIELDS",
+      title: "Solar Fields",
       description:
         "Harness the power of the sun to drive clean energy solutions. Our solar initiatives focus on large-scale photovoltaic installations to provide affordable, sustainable power globally.",
       phase: 1,
     },
     {
       icon: "H₂",
-      title: "GREEN HYDROGEN",
+      title: "Green Hydrogen",
       description:
         "Leading the transition to a hydrogen-powered future. By producing green hydrogen through renewable energy, we enable clean fuel alternatives for industries and transportation.",
       phase: 1,
     },
     {
       icon: "⚡",
-      title: "ENERGY STORAGE",
+      title: "Energy Storage",
       description:
         "Empowering energy independence with advanced storage solutions. We integrate battery systems to ensure a reliable, uninterrupted supply of renewable power anytime, anywhere.",
       phase: 1,
     },
     {
       icon: "🌪️",
-      title: "WIND TURBINES",
+      title: "Wind Turbines",
       description:
         "We utilize wind farms to maximize efficiency and deliver renewable energy to communities worldwide.",
       phase: 2,
     },
     {
       icon: "♻️",
-      title: "WASTE TO ENERGY",
+      title: "Waste-to-Energy",
       description:
         "Transforming waste into a sustainable resource. Our projects convert organic and industrial waste into clean energy, reducing landfill reliance and greenhouse emissions.",
       phase: 2,
     },
     {
       icon: "🔥",
-      title: "BIO-GAS TURBINES",
+      title: "Biogas Power Plants",
       description:
         "Pioneering bio-energy by capturing methane and biogas. These turbines convert organic matter into renewable power, supporting sustainable energy transitions for industries and homes.",
       phase: 2,
@@ -53,7 +53,7 @@ const EnergyPlanSection = () => {
         {/* <h2 className="text-4xl font-bold text-center mb-4">
 					Our Plan
 				</h2> */}
-        <p className="mx-auto mb-12 max-w-4xl text-center text-xl font-bold opacity-75">
+        <p className="mx-auto mb-12 max-w-4xl text-center text-xl font-bold opacity-75 xl:-translate-y-12">
           Earn passive income and make a positive impact on the Earth -
           it&apos;s that simple Renewable energy investments made possible
           through blockchain, promoting transparency and sustainability. By
@@ -66,8 +66,12 @@ const EnergyPlanSection = () => {
             <div key={index} className="group relative">
               <div className="rounded-2xl border border-zinc-800 bg-background p-8 text-center transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-primary-foreground">
                 <div className="mb-6 text-4xl">{plan.icon}</div>
-                <h3 className="mb-4 text-xl font-bold">{plan.title}</h3>
-                <p className="text-sm opacity-60">{plan.description}</p>
+                <h3 className="font-polysans mb-4 text-2xl font-bold">
+                  {plan.title}
+                </h3>
+                <p className="text-sm font-semibold opacity-60">
+                  {plan.description}
+                </p>
                 {plan.phase === 1 && index === 2 && (
                   <div className="absolute right-0 top-0 flex h-24 w-24 items-center justify-center rounded-full bg-primary text-primary-foreground sm:-translate-y-[50%] sm:translate-x-[50%]">
                     <div className="rotate-12 text-base font-extrabold transition-all group-hover:rotate-0">
@@ -88,7 +92,7 @@ const EnergyPlanSection = () => {
         </div>
       </div>
       <Image
-        src="/section-2.svg"
+        src="/assets/section-2.svg"
         alt="Plan"
         width={0}
         height={0}

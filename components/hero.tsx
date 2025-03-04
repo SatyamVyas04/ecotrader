@@ -10,7 +10,7 @@ const PrivateSaleLanding = () => {
         <div className="mb-8 mt-8 flex flex-row items-center justify-between gap-4 sm:mb-16 sm:mt-auto">
           <div className="w-48 sm:w-60">
             <Image
-              src="dark-logo.svg"
+              src="/branding/dark-logo.svg"
               alt="Ecotrader.io"
               height="512"
               width="512"
@@ -19,7 +19,7 @@ const PrivateSaleLanding = () => {
           </div>
           <div>
             <Image
-              src="/security.png"
+              src="/integrations/security.png"
               alt="Ecotrader.io"
               height="512"
               width="512"
@@ -33,20 +33,21 @@ const PrivateSaleLanding = () => {
         <div className={`flex flex-col gap-4 lg:grid`}>
           {/* Rest of the existing component remains the same */}
           <div className="mb-8 w-full space-y-5 lg:mb-0">
-            <h1 className="mt-8 items-center text-center text-xl font-bold tracking-tighter sm:mt-6 sm:text-5xl">
+            <h1 className="font-polysans mt-8 items-center text-center text-xl font-bold tracking-wide sm:mt-6 sm:text-6xl">
               EcoTrader&apos;s Real World Assets
               <br />
-              <p className="text-xl normal-case tracking-tighter sm:mt-2 sm:text-5xl">
-                Your door to the <span className="italic">Energy Sector</span>
+              <p className="text-xl normal-case sm:mt-2 sm:text-6xl">
+                Your door to the{" "}
+                <span className="italic text-primary">Energy Sector</span>
               </p>
             </h1>
-            <p className="!sm:mt-8 max-w-xl text-center text-sm sm:mx-auto sm:text-lg">
+            <p className="!sm:mt-8 max-w-xl text-center text-sm opacity-50 sm:mx-auto sm:text-lg">
               The Renewable Energy Market is now available to small investors.
               You can take an active part in the Green Energy
             </p>
             <div className="mx-auto my-16 max-h-96 w-[90%] rounded-xl">
               <Image
-                src="/mountains.jpg"
+                src="/assets/mountains.jpg"
                 alt="Mountains graphic"
                 height={384}
                 width={1000}
@@ -55,7 +56,7 @@ const PrivateSaleLanding = () => {
             </div>
             <div className="absolute right-0 top-0 -z-10 hidden justify-center sm:flex lg:justify-end">
               <Image
-                src="section-1.svg"
+                src="/assets/section-1.svg"
                 alt="Star graphic"
                 width="400"
                 height="400"
@@ -65,7 +66,7 @@ const PrivateSaleLanding = () => {
           <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 text-center uppercase sm:flex-row">
             <HyperText className="text-lg">Happy to Integrate with</HyperText>
             <Image
-              src="/Diamante_White_Horizontal.png"
+              src="/integrations/Diamante.png"
               alt="Mountains graphic"
               width={200}
               height={200}
@@ -75,7 +76,7 @@ const PrivateSaleLanding = () => {
         </div>
         <div className="mx-auto my-16 max-h-96 w-[90%] rounded-xl">
           <Image
-            src="/mountains.jpg"
+            src="/assets/mountains.jpg"
             alt="Mountains graphic"
             height={384}
             width={1000}
