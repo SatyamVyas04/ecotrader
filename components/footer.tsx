@@ -64,9 +64,24 @@ export default function Footer() {
         ))}
       </div>
 
+      <a
+        href="https://drive.google.com/file/d/1Tpu3rXuNyzXcVQ9NOTqhvSvMfVIya48n/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h1 className="my-4 font-polysans text-xl transition-colors hover:text-background/80 hover:underline">
+          White Paper
+        </h1>
+      </a>
+
       {/* Bottom Section: Copyright */}
-      <div className="border-t border-background pt-4 text-sm">
-        Copyright © 2024 Ecotrader • All Rights Reserved
+      <div className="border-t border-background/20 pt-4">
+        <div className="flex flex-col items-center gap-2 text-sm sm:flex-row sm:justify-center">
+          <p>
+            Copyright © {new Date().getFullYear()} Ecotrader • All Rights
+            Reserved
+          </p>
+        </div>
       </div>
     </footer>
   );
