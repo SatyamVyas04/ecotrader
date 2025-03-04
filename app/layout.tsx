@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       url: "/branding/symbol.svg",
     },
   ],
-  metadataBase: new URL("https://www.ecotrader.io"), // Replace with actual domain
+  metadataBase: new URL("https://www.ecotrader.io"),
   openGraph: {
     title: "Ecotrader: Revolutionizing Renewable Energy Investments",
     description:
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/seo/EcotraderTwitterBanner.png",
-        width: 1200,
-        height: 630,
+        width: 3001,
+        height: 1001,
         alt: "Ecotrader",
       },
     ],
