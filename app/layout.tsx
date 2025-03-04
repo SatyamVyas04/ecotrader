@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://www.ecotrader.io"),
   openGraph: {
+    siteName: "Ecotrader",
     title: "Ecotrader: Revolutionizing Renewable Energy Investments",
     description:
       "Join the green energy revolution. Invest in sustainable projects and earn passive income while making a positive impact on the planet.",
