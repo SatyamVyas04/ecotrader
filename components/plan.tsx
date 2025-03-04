@@ -53,7 +53,7 @@ const EnergyPlanSection = () => {
         {/* <h2 className="text-4xl font-bold text-center mb-4">
 					Our Plan
 				</h2> */}
-        <p className="mx-auto mb-12 max-w-4xl text-center text-xl font-bold opacity-75 xl:-translate-y-12">
+        <p className="mx-auto mb-12 max-w-4xl -translate-y-12 text-center font-semibold opacity-75 md:text-xl">
           Earn passive income and make a positive impact on the Earth -
           it&apos;s that simple Renewable energy investments made possible
           through blockchain, promoting transparency and sustainability. By
@@ -66,7 +66,7 @@ const EnergyPlanSection = () => {
             <div key={index} className="group relative">
               <div className="rounded-2xl border border-zinc-800 bg-background p-8 text-center transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-primary-foreground">
                 <div className="mb-6 text-4xl">{plan.icon}</div>
-                <h3 className="font-polysans mb-4 text-2xl font-bold">
+                <h3 className="mb-4 font-polysans text-2xl font-bold">
                   {plan.title}
                 </h3>
                 <p className="text-sm font-semibold opacity-60">

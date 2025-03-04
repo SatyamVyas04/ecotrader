@@ -41,7 +41,7 @@ export default function Footer() {
           alt="Ecotrader Logo"
           width={1000}
           height={1000}
-          className="mx-12 w-full max-w-md"
+          className="mx-12 mb-4 w-full max-w-md px-8"
         />
       </div>
 
