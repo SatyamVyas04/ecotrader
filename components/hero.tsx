@@ -32,7 +32,7 @@ const PrivateSaleLanding = () => {
         {/* Main Content */}
         <div className={`flex flex-col gap-4 lg:grid`}>
           {/* Rest of the existing component remains the same */}
-          <div className="mb-8 w-full space-y-5 lg:mb-0">
+          <div className="mb-8 relative w-full space-y-5 lg:mb-0">
             <h1 className="font-polysans mt-8 items-center text-center text-xl font-bold tracking-wide sm:mt-6 sm:text-6xl">
               EcoTrader&apos;s Real World Assets
               <br />
