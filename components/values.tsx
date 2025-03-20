@@ -76,13 +76,13 @@ const ValuesSection = () => {
       </div>
 
       {/* Background Pattern - Right Side */}
-      <Image
+      {/* <Image
         src="/assets/section-3.svg"
         alt="Pattern"
         width={0}
         height={0}
         className="absolute right-0 top-2/3 -z-10 h-auto w-[500px] -translate-y-1/2"
-      />
+      /> */}
     </section>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import HyperText from "./ui/hyper-text";
+import { TextAnimate } from "./magicui/text-animate";
 
 const PrivateSaleLanding = () => {
   return (
@@ -38,7 +39,15 @@ const PrivateSaleLanding = () => {
               <br />
               <p className="text-xl normal-case sm:mt-2 sm:text-6xl">
                 Your door to the{" "}
-                <span className="italic text-primary">Energy Sector</span>
+                <TextAnimate
+                  by="character"
+                  startOnView={true}
+                  animate="slideLeft"
+                  delay={0.5}
+                  className="inline italic text-primary"
+                >
+                  Energy Sector
+                </TextAnimate>
               </p>
             </h1>
             <p className="!sm:mt-8 max-w-xl text-center text-sm opacity-50 sm:mx-auto sm:text-lg">
@@ -54,14 +63,14 @@ const PrivateSaleLanding = () => {
                 className="max-h-96 w-full rounded-xl object-cover sm:hidden"
               />
             </div>
-            <div className="absolute right-0 top-0 -z-10 hidden justify-center sm:flex lg:justify-end">
+            {/* <div className="absolute right-0 top-0 -z-10 hidden justify-center sm:flex lg:justify-end">
               <Image
                 src="/assets/section-1.svg"
                 alt="Star graphic"
                 width="400"
                 height="400"
               />
-            </div>
+            </div> */}
           </div>
           <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 text-center uppercase sm:flex-row">
             <HyperText className="text-lg">Happy to Integrate with</HyperText>

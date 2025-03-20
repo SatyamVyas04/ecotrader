@@ -26,7 +26,7 @@ const EcotraderTokenCenter = () => {
         backdropFilter: "blur(10px)",
       }}
     >
-      <div className="absolute inset-0 z-0 opacity-30">
+      {/* <div className="absolute inset-0 z-0 opacity-30">
         <Image
           src="/assets/section-3.svg"
           alt="bg asset"
@@ -34,7 +34,7 @@ const EcotraderTokenCenter = () => {
           width={2000}
           className="absolute right-0 top-0 h-[600px] w-[600px] object-cover"
         />
-      </div>
+      </div> */}
 
       <div className="absolute inset-0 bg-black/50"></div>
 

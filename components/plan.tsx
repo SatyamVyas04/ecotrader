@@ -91,13 +91,13 @@ const EnergyPlanSection = () => {
           ))}
         </div>
       </div>
-      <Image
+      {/* <Image
         src="/assets/section-2.svg"
         alt="Plan"
         width={0}
         height={0}
         className="absolute left-0 top-0 -z-10 h-full w-auto"
-      />
+      /> */}
     </section>
   );
 };

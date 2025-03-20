@@ -69,13 +69,13 @@ const EnergyMapSection = () => {
           </div>
         </div>
       </div>
-      <Image
+      {/* <Image
         src="/assets/section-4.svg"
         alt="Pattern"
         width={0}
         height={0}
         className="absolute right-0 top-1/2 -z-10 h-auto w-dvw -translate-y-1/2"
-      />
+      /> */}
     </div>
   );
 };
