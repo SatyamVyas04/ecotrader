@@ -42,13 +42,15 @@ const EcotraderTokenCenter = () => {
         {/* Header */}
         <div className="mb-8 mt-8 flex flex-row items-center justify-between gap-4 sm:mb-16 sm:mt-auto">
           <div className="w-48 sm:w-60">
-            <Image
-              src="/branding/dark-logo.svg"
-              alt="Ecotrader.io"
-              height="512"
-              width="512"
-              priority={true}
-            />
+            <Link href="/">
+              <Image
+                src="/branding/dark-logo.svg"
+                alt="Ecotrader.io"
+                height="512"
+                width="512"
+                priority={true}
+              />
+            </Link>
           </div>
           <div className="flex flex-row items-center gap-4">
             <Image

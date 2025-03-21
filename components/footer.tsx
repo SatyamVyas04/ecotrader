@@ -81,12 +81,12 @@ export default function Footer() {
         >
           White Paper
         </a>
-        {/* <a
+        <a
           href="/faq"
           className="font-polysans text-lg transition-colors hover:text-background/80 hover:underline"
         >
           FAQ
-        </a> */}
+        </a>
       </nav>
 
       {/* Copyright */}

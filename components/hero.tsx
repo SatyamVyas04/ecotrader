@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import HyperText from "./ui/hyper-text";
-import { TextAnimate } from "./magicui/text-animate";
+import { TextAnimate } from "./ui/text-animate";
 
 const PrivateSaleLanding = () => {
   return (
