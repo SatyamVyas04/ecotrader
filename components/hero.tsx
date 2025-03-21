@@ -42,7 +42,7 @@ const PrivateSaleLanding = () => {
                 <TextAnimate
                   by="character"
                   startOnView={true}
-                  animate="slideLeft"
+                  animation="slideRight"
                   delay={0.5}
                   className="inline italic text-primary"
                 >
