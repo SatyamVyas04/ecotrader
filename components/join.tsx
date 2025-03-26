@@ -44,7 +44,7 @@ const EcotraderTokenCenter = () => {
         <Header />
 
         {/* Hero Section */}
-        <div className="relative mb-6 overflow-hidden rounded-lg bg-background/50 bg-center p-8 text-center opacity-100 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl md:bg-[url('/assets/bg_asset_join.png')] xl:p-12">
+        <div className="relative mb-6 overflow-hidden rounded-lg bg-background/50 bg-center p-8 text-center opacity-100 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl bg-[url('/assets/bg_asset_join.png')] xl:p-12">
           <div className="absolute inset-0 bg-green-600/45 backdrop-blur-sm"></div>
           <h1 className="relative z-10 mb-4 font-polysans text-4xl font-bold text-foreground md:text-6xl xl:text-7xl">
             TOKEN INFORMATION
