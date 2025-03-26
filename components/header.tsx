@@ -25,7 +25,7 @@ export default function header() {
           width="512"
           className="hidden h-16 w-fit md:block"
         />
-        <Link href="">
+        <Link href="/join">
           <Button
             className="flex flex-row items-center justify-center gap-2 md:p-6"
             variant="secondary"

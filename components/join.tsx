@@ -8,11 +8,8 @@ import {
   FaFacebook,
   FaTwitter,
 } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
 import { HiDocumentText } from "react-icons/hi";
 import { SiCoinmarketcap } from "react-icons/si";
-import { RiCoinsFill } from "react-icons/ri";
-import { BiAnalyse } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./header";
@@ -56,9 +53,16 @@ const EcotraderTokenCenter = () => {
                 <div className="my-6 h-1 w-48 bg-accent"></div>
               </div>
 
-              <Link href="">
+              <Link
+                target="_blank"
+                href="https://app.uniswap.org/explore/tokens/ethereum/0xb96682a8f558b8199a2dc039b1dd8911e5068faf"
+              >
                 <Button className="flex transform items-center gap-2 bg-background p-6 text-foreground transition-transform duration-200 hover:scale-105 hover:bg-secondary">
-                  <FiExternalLink />
+                  <img
+                    src="/assets/uniswap.png"
+                    alt="uniswap"
+                    className="h-8 w-8 invert"
+                  />
                   Purchase on Uniswap
                 </Button>
               </Link>
@@ -74,28 +78,35 @@ const EcotraderTokenCenter = () => {
         </Card>
 
         {/* Features Grid */}
-        <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-6">
+        <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-6">
           {/* Market Listings */}
-          <Card className="cursor-pointer border-0 bg-white text-card-foreground shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl lg:col-span-2">
-            <CardContent className="flex h-full flex-col items-start justify-start p-6 text-background">
+          <Card className="cursor-pointer border-0 bg-white text-card-foreground shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl xl:col-span-2">
+            <CardContent className="flex h-full flex-col items-center justify-start p-6 text-background md:items-start">
               <h3 className="mb-2 font-polysans text-2xl font-bold lg:text-3xl xl:text-4xl">
                 MARKET LISTINGS
               </h3>
-              <p className="mb-4 text-muted">
+              <p className="mb-4 text-center text-muted sm:text-start">
                 Track our token&apos;s performance and market data on these
                 platforms
               </p>
 
-              <div className="mt-auto flex w-full flex-wrap gap-2">
-                <Link href="">
+              <div className="mt-auto flex w-full flex-col flex-wrap items-center justify-start gap-2 md:flex-row">
+                <Link
+                  target="_blank"
+                  href="https://coinmarketcap.com/dexscan/ethereum/0xe7efbcce50e46b31369aba1dfee1ae3a8aa2bdb4/"
+                >
                   <Button className="flex w-full transform items-center gap-2 bg-background p-6 text-foreground transition-transform duration-200 hover:scale-105 hover:bg-secondary md:w-fit">
-                    <SiCoinmarketcap />
+                    <SiCoinmarketcap className="h-8 w-8" />
                     CoinMarketCap
                   </Button>
                 </Link>
-                <Link href="">
+                <Link target="_blank" href="">
                   <Button className="flex w-full transform items-center gap-2 bg-primary p-6 text-primary-foreground transition-transform duration-200 hover:scale-105 hover:bg-primary/90 md:w-fit">
-                    <RiCoinsFill />
+                    <img
+                      src="/assets/coingecko.png"
+                      alt="coingecko"
+                      className="h-6 w-6"
+                    />
                     CoinGecko
                   </Button>
                 </Link>
@@ -111,7 +122,7 @@ const EcotraderTokenCenter = () => {
               </h3>
 
               <div className="mt-4 flex flex-wrap justify-center gap-2 xl:gap-3">
-                <Link href="https://t.me/TheEcoTrader">
+                <Link target="_blank" href="https://t.me/TheEcoTrader">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -119,7 +130,10 @@ const EcotraderTokenCenter = () => {
                     <FaTelegram className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="https://www.instagram.com/ecotrader.io/">
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/ecotrader.io/"
+                >
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -127,7 +141,10 @@ const EcotraderTokenCenter = () => {
                     <FaInstagram className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="https://www.linkedin.com/company/ecotrader/?viewAsMember=true">
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/company/ecotrader/?viewAsMember=true"
+                >
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -135,7 +152,10 @@ const EcotraderTokenCenter = () => {
                     <FaLinkedin className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="https://www.facebook.com/Ecotrader.io/">
+                <Link
+                  target="_blank"
+                  href="https://www.facebook.com/Ecotrader.io/"
+                >
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -143,7 +163,7 @@ const EcotraderTokenCenter = () => {
                     <FaFacebook className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="https://x.com/Ecotrader_io">
+                <Link target="_blank" href="https://x.com/Ecotrader_io">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -156,7 +176,7 @@ const EcotraderTokenCenter = () => {
           </Card>
 
           {/* Tokenomics */}
-          <Card className="cursor-pointer border-4 border-white bg-background/50 text-end text-foreground shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl lg:col-span-2">
+          <Card className="cursor-pointer border-4 border-white bg-background/50 text-end text-foreground shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl xl:col-span-2">
             <CardContent className="p-6">
               <h3 className="mb-2 font-polysans text-2xl font-bold lg:text-3xl xl:text-4xl">
                 TOKENOMICS & SECURITY
@@ -166,7 +186,7 @@ const EcotraderTokenCenter = () => {
                 mechanisms
               </p>
 
-              <Link href="">
+              <Link target="_blank" href="">
                 <Button className="transform bg-primary p-6 text-primary-foreground transition-transform duration-200 hover:scale-105 hover:bg-primary/90">
                   Tokenomics Details
                 </Button>
@@ -186,10 +206,16 @@ const EcotraderTokenCenter = () => {
                 Access real-time analytics and data about our token
               </p>
 
-              <Link href="">
+              <Link
+                target="_blank"
+                href="https://www.dextools.io/app/en/ether/pair-explorer/0xe7efbcce50e46b31369aba1dfee1ae3a8aa2bdb4?t=1743011367077"
+              >
                 <Button className="mx-auto flex transform items-center gap-2 bg-card p-6 text-card-foreground transition-transform duration-200 hover:scale-105 hover:bg-secondary">
-                  <BiAnalyse />
-                  Dextools
+                  <img
+                    src="/assets/dextools.png"
+                    alt="dextools"
+                    className="h-8"
+                  />
                 </Button>
               </Link>
             </CardContent>
@@ -210,7 +236,10 @@ const EcotraderTokenCenter = () => {
               </p>
 
               <div className="flex justify-end">
-                <Link href="https://drive.google.com/file/d/1Tpu3rXuNyzXcVQ9NOTqhvSvMfVIya48n/view?usp=drive_link">
+                <Link
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1Tpu3rXuNyzXcVQ9NOTqhvSvMfVIya48n/view?usp=drive_link"
+                >
                   <Button className="flex transform items-center gap-2 bg-primary p-6 text-primary-foreground transition-transform duration-200 hover:scale-105 hover:bg-primary/90">
                     <HiDocumentText />
                     Whitepaper
@@ -232,9 +261,19 @@ const EcotraderTokenCenter = () => {
                 participate in the sale
               </p>
               <div className="my-6 ml-auto h-1 w-48 bg-primary"></div>
-              <Link href="" className="mt-auto self-end">
-                <Button className="w-fit transform cursor-pointer rounded-md bg-primary p-6 text-center text-primary-foreground transition-all duration-200 hover:scale-105 hover:bg-background hover:text-foreground">
-                  0x234d...24085
+              <Link
+                href="https://app.uniswap.org/explore/tokens/ethereum/0xb96682a8f558b8199a2dc039b1dd8911e5068faf"
+                className="mt-auto self-end"
+              >
+                <Button
+                  className="w-fit max-w-52 transform cursor-pointer rounded-md bg-primary p-6 text-primary-foreground transition-all duration-200 hover:scale-105 hover:bg-background hover:text-foreground"
+                  style={{
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                  }}
+                >
+                  0xb966...68FaF
                 </Button>
               </Link>
             </CardContent>
