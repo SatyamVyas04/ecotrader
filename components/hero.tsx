@@ -18,7 +18,8 @@ const PrivateSaleLanding = () => {
               EcoTrader&apos;s Real World Assets
               <br />
               <p className="text-xl normal-case sm:mt-2 sm:text-6xl">
-                Your door to the{" "}
+                Your door to the
+                <br className="xl:hidden" />
                 <TextAnimate
                   by="character"
                   startOnView={true}
