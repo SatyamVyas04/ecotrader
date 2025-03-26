@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
-  FaDiscord,
+  FaTelegram,
   FaInstagram,
   FaLinkedin,
   FaFacebook,
@@ -19,7 +19,7 @@ import Link from "next/link";
 const EcotraderTokenCenter = () => {
   return (
     <div
-      className="relative overflow-hidden pb-12 font-sans text-foreground md:bg-[url('/assets/bg_asset_join.png')]"
+      className="relative overflow-hidden pb-12 font-sans text-foreground"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -79,7 +79,8 @@ const EcotraderTokenCenter = () => {
         </div>
 
         {/* Hero Section */}
-        <div className="relative mb-6 overflow-hidden rounded-lg bg-background/50 p-8 text-center opacity-100 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl xl:p-12">
+        <div className="relative mb-6 overflow-hidden rounded-lg bg-background/50 bg-center p-8 text-center opacity-100 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl md:bg-[url('/assets/bg_asset_join.png')] xl:p-12">
+          <div className="absolute inset-0 bg-green-600/45 backdrop-blur-sm"></div>
           <h1 className="relative z-10 mb-4 font-polysans text-4xl font-bold text-foreground md:text-6xl xl:text-7xl">
             TOKEN INFORMATION
           </h1>
@@ -164,15 +165,15 @@ const EcotraderTokenCenter = () => {
               </h3>
 
               <div className="mt-4 flex flex-wrap justify-center gap-2 xl:gap-3">
-                <Link href="">
+                <Link href="https://t.me/TheEcoTrader">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
                   >
-                    <FaDiscord className="h-6 w-6" />
+                    <FaTelegram className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="">
+                <Link href="https://www.instagram.com/ecotrader.io/">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -180,7 +181,7 @@ const EcotraderTokenCenter = () => {
                     <FaInstagram className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="">
+                <Link href="https://www.linkedin.com/company/ecotrader/?viewAsMember=true">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -188,7 +189,7 @@ const EcotraderTokenCenter = () => {
                     <FaLinkedin className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="">
+                <Link href="https://www.facebook.com/Ecotrader.io/">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -196,7 +197,7 @@ const EcotraderTokenCenter = () => {
                     <FaFacebook className="h-6 w-6" />
                   </Button>
                 </Link>
-                <Link href="">
+                <Link href="https://x.com/Ecotrader_io">
                   <Button
                     variant="outline"
                     className="rounded-full p-2 transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
@@ -263,10 +264,10 @@ const EcotraderTokenCenter = () => {
               </p>
 
               <div className="flex justify-end">
-                <Link href="">
+                <Link href="https://drive.google.com/file/d/1Tpu3rXuNyzXcVQ9NOTqhvSvMfVIya48n/view?usp=drive_link">
                   <Button className="flex transform items-center gap-2 bg-primary p-6 text-primary-foreground transition-transform duration-200 hover:scale-105 hover:bg-primary/90">
                     <HiDocumentText />
-                    White-paper
+                    Whitepaper
                   </Button>
                 </Link>
               </div>

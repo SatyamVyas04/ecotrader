@@ -79,7 +79,13 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="font-polysans text-lg transition-colors hover:text-background/80 hover:underline"
         >
-          White Paper
+          Whitepaper
+        </a>
+        <a
+          href="/join"
+          className="font-polysans text-lg transition-colors hover:text-background/80 hover:underline"
+        >
+          Join
         </a>
         <a
           href="/faq"
