@@ -19,26 +19,7 @@ import Header from "./header";
 
 const EcotraderTokenCenter = () => {
   return (
-    <div
-      className="relative overflow-hidden pb-12 font-sans text-foreground"
-      style={{
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backdropFilter: "blur(10px)",
-      }}
-    >
-      {/* <div className="absolute inset-0 z-0 opacity-30">
-        <Image
-          src="/assets/section-3.svg"
-          alt="bg asset"
-          height={2000}
-          width={2000}
-          className="absolute right-0 top-0 h-[600px] w-[600px] object-cover"
-        />
-      </div> */}
-
-      <div className="absolute inset-0 bg-black/50"></div>
-
+    <div className="relative overflow-hidden bg-transparent pb-12 font-sans text-foreground">
       <div className="container relative z-10 mx-auto px-4 py-6">
         {/* Header */}
         <Header />
