@@ -17,9 +17,8 @@ const PrivateSaleLanding = () => {
             <h1 className="mt-8 items-center text-center font-polysans text-xl font-bold tracking-wide sm:mt-6 sm:text-6xl">
               EcoTrader&apos;s Real World Assets
               <br />
-              <p className="text-xl normal-case sm:mt-2 sm:text-6xl">
-                Your door to the
-                <br className="xl:hidden" />
+              <p className="text-xl normal-case sm:mt-2 sm:text-3xl md:text-6xl">
+                Your door to the <br className="xl:hidden" />
                 <TextAnimate
                   by="character"
                   startOnView={true}
