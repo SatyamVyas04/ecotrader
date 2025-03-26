@@ -2,34 +2,14 @@
 import Image from "next/image";
 import HyperText from "./ui/hyper-text";
 import { TextAnimate } from "./ui/text-animate";
+import Header from "./header";
 
 const PrivateSaleLanding = () => {
   return (
     <div className="p-4 text-white md:p-6">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <div className="mb-8 mt-8 flex flex-row items-center justify-between gap-4 sm:mb-16 sm:mt-auto">
-          <div className="w-48 sm:w-60">
-            <Image
-              src="/branding/dark-logo.svg"
-              alt="Ecotrader.io"
-              height="512"
-              width="512"
-              priority={true}
-            />
-          </div>
-          <div>
-            <Image
-              src="/integrations/security.png"
-              alt="Ecotrader.io"
-              height="512"
-              width="512"
-              className="h-16 w-fit sm:h-24"
-              priority={true}
-            />
-          </div>
-        </div>
-
+        <Header />
         {/* Main Content */}
         <div className={`flex flex-col gap-4 lg:grid`}>
           {/* Rest of the existing component remains the same */}

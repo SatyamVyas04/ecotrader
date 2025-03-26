@@ -15,6 +15,7 @@ import { RiCoinsFill } from "react-icons/ri";
 import { BiAnalyse } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./header";
 
 const EcotraderTokenCenter = () => {
   return (
@@ -40,43 +41,7 @@ const EcotraderTokenCenter = () => {
 
       <div className="container relative z-10 mx-auto px-4 py-6">
         {/* Header */}
-        <div className="mb-8 mt-8 flex flex-row items-center justify-between gap-4 sm:mb-16 sm:mt-auto">
-          <div className="w-48 sm:w-60">
-            <Link href="/">
-              <Image
-                src="/branding/dark-logo.svg"
-                alt="Ecotrader.io"
-                height="512"
-                width="512"
-                priority={true}
-              />
-            </Link>
-          </div>
-          <div className="flex flex-row items-center gap-4">
-            <Image
-              src="/integrations/security.png"
-              alt="Ecotrader.io"
-              height="512"
-              width="512"
-              className="hidden h-16 w-fit md:block"
-            />
-            <Link href="">
-              <Button
-                className="flex flex-row items-center justify-center gap-2 p-6"
-                variant="secondary"
-              >
-                <Image
-                  src="/branding/symbol.svg"
-                  height={16}
-                  width={16}
-                  alt="logo"
-                  className="hidden md:block"
-                />{" "}
-                <div>Buy ECT Token</div>
-              </Button>
-            </Link>
-          </div>
-        </div>
+        <Header />
 
         {/* Hero Section */}
         <div className="relative mb-6 overflow-hidden rounded-lg bg-background/50 bg-center p-8 text-center opacity-100 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl md:bg-[url('/assets/bg_asset_join.png')] xl:p-12">

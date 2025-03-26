@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "@/components/footer";
 
 // Dynamically import Join with loading
 const Join = dynamic(() => import("../../components/join"), {
@@ -35,6 +36,7 @@ export default function Home() {
     >
       <div onLoad={handleJoinLoad}>
         <Join />
+        <Footer />
       </div>
     </div>
   );

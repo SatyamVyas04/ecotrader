@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} mx-auto max-w-screen-2xl antialiased`}
+        className={`${inter.className} mx-auto max-w-screen-2xl overflow-x-hidden antialiased`}
       >
         {children}
       </body>
