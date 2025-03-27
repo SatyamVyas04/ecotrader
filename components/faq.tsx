@@ -43,6 +43,11 @@ const FAQ = () => {
             "The ECT Token is launching first. SPV Tokens, which represent investments in actual renewable energy projects, will be introduced later. Investors will need to wait for the SPV Token launch before they can directly invest in renewable energy projects.",
         },
         {
+          question: "When is the ECT Token launching?",
+          answer:
+            "The ECT Token was launched on 26th March 2025. It is available for trading on decentralized exchanges (DEXes) and potentially centralized exchanges (CEXes).",
+        },
+        {
           question: "What is the ECT Token used for?",
           answer:
             "The ECT Token is the utility and governance token of the Ecotrader platform. It is used for:\n\n- Staking rewards\n- Governance voting (via the Ecotrader DAO)\n- Paying platform fees\n- Providing liquidity for the ecosystem\n\nECT does not represent ownership in any energy projects. Ownership will be tied to SPV Tokens, launching at a later stage.",
