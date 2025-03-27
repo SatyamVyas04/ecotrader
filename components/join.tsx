@@ -100,7 +100,7 @@ const EcotraderTokenCenter = () => {
                     CoinMarketCap
                   </Button>
                 </Link>
-                <Link target="_blank" href="">
+                <Link target="_blank" href="https://www.coingecko.com/en/coins/ecotrader">
                   <Button className="flex w-full transform items-center gap-2 bg-primary p-6 text-primary-foreground transition-transform duration-200 hover:scale-105 hover:bg-primary/90 md:w-fit">
                     <img
                       src="/assets/coingecko.png"
